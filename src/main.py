@@ -5,3 +5,8 @@ import os
 load_dotenv()  # Carga variables de entorno desde .env
 
 app = FastAPI()
+
+@app.get("/")
+async def read_post():
+    return {"mensaje": "Hoy arranca ZettaSimIA!!"}
+
